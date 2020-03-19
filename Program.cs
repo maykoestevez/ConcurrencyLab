@@ -7,8 +7,13 @@ namespace ConcurrencyLab
         static void Main(string[] args)
         {
             //Test Delay
-            var delayTask = new Delay<string>();
-            Console.WriteLine(delayTask.DelayTask("Hola After 5 seconds", TimeSpan.FromSeconds(5)).Result);
+            var progress = new Progress<int>();
+            var count = new ProgressLab();
+            progress.ProgressChanged += (sender, args) =>
+            {
+                Console.WriteLine("Hola");
+            };
+            count.Counter(progress).GetAwaiter();
         }
     }
 }
