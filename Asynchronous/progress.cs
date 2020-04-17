@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace ConcurrencyLab
+namespace ConcurrencyLab.Asynchronous
 {
     public class ProgressLab
     {
