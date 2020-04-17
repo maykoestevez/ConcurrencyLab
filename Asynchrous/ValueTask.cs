@@ -7,7 +7,7 @@ namespace ConcurrencyLab
 {
     public class ValueTask
     {
-        // Adventage, Return Value in an async environment
+        // Adventage, Return Value in an async environment and mix async with sync process
         // Disadventage you can just await it once
         public async ValueTask<int> delay(TimeSpan time)
         {
