@@ -7,11 +7,9 @@ namespace ConcurrencyLab
     public class Iterators
     {
         public void ParallelFor()=>
-                       Parallel.For(0, 9, (index) =>{ /*Parralel work should be independent*/ });
-        
+                       Parallel.For(0, 9, (index) =>{ /*parralel work should be independent*/ });
 
         public void ParallelForEach()=>
-                 Parallel.ForEach(Enumerable.Range(0, 10), (data) =>{ /*Parralel work should be independent*/});
-        
+                 Parallel.ForEach(Enumerable.Range(0, 10), (data) =>{ /*parralel work should be independent*/});
     }
 }
