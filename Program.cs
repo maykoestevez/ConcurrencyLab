@@ -9,6 +9,11 @@ namespace ConcurrencyLab
     {
         static void Main(string[] args)
         {
+            // Test Async void
+
+            var asyncVoid = new AsyncVoidMethod();
+            asyncVoid.TestAsyncVoid();
+
             //Test Delay
             var progress = new Progress<int>();
             var count = new ProgressLab();
@@ -18,5 +23,6 @@ namespace ConcurrencyLab
             };
             count.Counter(progress).GetAwaiter();
         }
+
     }
 }
